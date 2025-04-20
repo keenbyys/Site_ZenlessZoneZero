@@ -1,3 +1,124 @@
+body {
+    margin: 0%;
+    background-color: #222222;
+}
+
+/* navigation */
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 99;
+}
+
+.header-wrapper {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1%;
+}
+
+.nav-image {
+    display: flex;
+    height: 100%;
+    margin: 0 10px;
+}
+
+.nav-image-logo {
+    display: flex;
+    width: calc(20% + 20px);
+    height: 100%;
+    margin-right: 10%;
+}
+
+.center-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size-img {
+    width: 100%;
+}
+
+/* ver banner */
+/*.banner-bg {
+}*/
+
+.banner-wrapper {
+    margin: 15% 10% 10% 10%;
+    padding: 0 10%;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-img {
+    width: 100%;
+}
+
+.video {
+    position: fixed;
+    top: 0%;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.container-download-link {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    min-width: 1200px;
+}
+
+.download-link {
+    position: relative;
+    display: flex;
+    width: 70%;
+    height: 4.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% auto;
+    padding: 0% 2%;
+    
+    border-radius: 10px;
+    background-color: #d8fa00;
+}
+
+.download-link-img {
+    display: flex;
+    width: 15%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: calc(2% - 20px) calc(1% - 10px);
+
+    max-width: 100%;
+}
+
+/* video teaser*/
+.container-teas-v-bg {
+    width: 100%;
+    height: 50rem;
+    background-image: url(media/site-background-dark.webp);
+    background-color: #efefef;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-width: 1200px;
+    max-width: 100%;
+}
+
+.teas-v-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
 .pos {
     position: absolute;
     top: 50%;
