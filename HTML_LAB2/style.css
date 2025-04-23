@@ -1492,7 +1492,7 @@ body {
     position: relative;
     display: flex;
     width: 100%;
-    height: 80vh;
+    height: 88vh;
     background-color: #efefef;
     overflow: hidden;
 }
@@ -1506,6 +1506,7 @@ body {
     width: 100%;
     margin: 0 11%;
     padding: 5% 0;
+    padding-right: 5.3vh;
 }
 
 .haru-art {
@@ -1518,16 +1519,22 @@ body {
 .haru-art img {
     position: absolute;
     display: block;
-    top: -35%;
-    left: -45%;
-    width: 90vh;
+    top: -45%;
+    left: -55%;
+    width: 100vh;
+}
+
+.haru-info-block {
+    position: relative;
+    width: auto;
+    height: 100%;
 }
 
 .haru-info {
     position: relative;
     display: flex;
-    width: 60vh;
-    height: 50vh;
+    width: 50vh;
+    height: 40vh;
     background-color: #222222;
     border-radius: 3vh;
 }
@@ -1539,7 +1546,7 @@ body {
     align-items: center;
     width: 100%;
     height: auto;
-    margin: 5%;
+    margin: 4% 10%;
 }
 
 .haru-info-text {
@@ -1569,7 +1576,6 @@ body {
     text-align: left;
 }
 
-
 .info-right {
     position: relative;
     display: flex;
@@ -1580,6 +1586,18 @@ body {
     height: auto;
 }
 
+.info-right span {
+    width: 100%;
+    font-family: 'din-next-regular';
+    font-size: 4vh;
+    color: #efefef;
+    text-align: right;
+}
+
+.info-right img {
+    width: 7vh;
+}
+
 .haru-info-details {
     position: relative;
     display: flex;
@@ -1587,4 +1605,58 @@ body {
     align-items: center;
     width: 100%;
     height: 100%;
+}
+
+.haru-info-img {
+    position: relative;
+    display: flex;
+    width: 50vh;
+    height: auto;
+    background-color: #222222;
+    border-radius: 3vh;
+    margin: 2% 0;
+}
+
+.haru-info-img-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 5% 10%;
+}
+
+.info-left2 {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 7vh;
+    height: auto;
+    
+}
+
+.info-left2 img {
+    width: 6vh;
+    margin: 15% 0;
+}
+
+.info-right2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+}
+
+.info-right2 span {
+    width: 100%;
+    font-family: 'din-next-medium';
+    font-size: 4vh;
+    color: #efefef;
+    text-align: left;
+    margin: 9% 10%;
 }
