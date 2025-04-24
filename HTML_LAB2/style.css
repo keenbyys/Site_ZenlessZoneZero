@@ -118,6 +118,19 @@ body {
 
 .logo-img {
     width: 100%;
+    animation: logo-in 1s ease;
+}
+
+@keyframes logo-in {
+    0% {
+        filter: blur(.6vh);
+        transform: scale(1.2);
+    }
+
+    100% {
+        filter: blur(0);
+        transform: scale(1.0);
+    }
 }
 
 .video {
@@ -128,7 +141,11 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    animation: logo-in 2s ease;
 }
+
+
+
 
 .container-download-link {
     position: relative;
@@ -148,6 +165,8 @@ body {
 
     border-radius: 1vh;
     background-color: #d8fa00;
+
+    overflow: hidden;
 }
 
 .download-link-img {
@@ -162,6 +181,17 @@ body {
 
 .img-link {
     width: 20vh;
+    animation: link-img-move-in 1s ease;
+}
+
+@keyframes link-img-move-in {
+    0% {
+        transform: translateY(150%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 /* video teaser */
@@ -833,6 +863,9 @@ body {
 }
 
 /* BUTTON TOP*/
+/* BUTTON TOP*/
+/* BUTTON TOP*/
+
 .container-button-top {
     position: fixed;
     display: flex;
@@ -855,13 +888,24 @@ body {
 .button-top a {
     position: absolute;
     top: -7.5vh;
-    left: 142vh;
+    right: -17.5vh;
     display: flex;
     justify-content: center;
     width: 10%;
     height: 22vh;
     opacity: 0.5;
     transition: .3s;
+    animation: botton-move-top .5s ease;
+}
+
+@keyframes botton-move-top {
+    0% {
+        top: 0vh;
+    }
+
+    100% {
+        top: -7.5vh;
+    }
 }
 
 .button-top:hover a {
@@ -871,7 +915,7 @@ body {
 
 /* CHARACTER =================================================================================== */
 
-.button-top-char {
+.button-top-black {
     position: relative;
     display: flex;
     justify-content: center;
@@ -880,10 +924,10 @@ body {
     margin: 0 11%;
 }
 
-.button-top-char a {
+.button-top-black a {
     position: absolute;
     top: -7.5vh;
-    left: 142vh;
+    right: -17.5vh;
     display: flex;
     justify-content: center;
     width: 10%;
@@ -891,11 +935,22 @@ body {
     opacity: 0.5;
     transition: .3s;
     filter: invert(1);
+    animation: botton-move-top 0.5s ease;
 }
 
-.button-top-char:hover a {
+.button-top-black:hover a {
     opacity: 1;
     top: -21vh;
+}
+
+@keyframes botton-move-top {
+    0% {
+        top: 0vh;
+    }
+
+    100% {
+        top: -7.5vh;
+    }
 }
 
 /* CHAR BANNER */
@@ -1309,44 +1364,6 @@ body {
     overflow: hidden;
 }
 
-.harumasu-mind-banner-block {
-    position: relative;
-    width: 100%;
-    background-color: #181718;
-    margin-top: 10vh;
-    height: 40vh;
-    overflow: hidden;
-}
-
-.haru-mind-banner-wrapper {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 40vh;
-}
-
-.haru-mind-banner-wrapper img {
-    position: fixed;
-    width: 100%;
-    opacity: 0.3;
-    filter: blur(0vh);
-    animation: blur-in 1.5s ease;
-}
-
-@keyframes blur-in {
-    0% {
-        width: 110%;
-        filter: blur(.4vh);
-    }
-
-    100% {
-        width: 100%;
-        filter: blur(0vh);
-    }
-}
-
 .haru-green-panel-bg {
     position: relative;
     display: flex;
@@ -1377,6 +1394,17 @@ body {
     border-width: 0.5vh;
     border-color: #222222;
     transition: .3s;
+    animation: move-back-button 1s ease;
+}
+
+@keyframes move-back-button {
+    0% {
+        transform: translateY(-130%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .haru-button-back-bg a {
@@ -1470,6 +1498,17 @@ body {
     border-width: 0.5vh;
     border-color: #222222;
     transition: .3s;
+    animation: move-back-button 1s ease;
+}
+
+@keyframes move-back-button {
+    0% {
+        transform: translateY(-130%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .haru-button-base-stats-bg a {
@@ -1540,6 +1579,19 @@ body {
     width: 181vh;
     height: 86.5vh;
     overflow: hidden;
+    animation: haru-art 1s ease;
+}
+
+@keyframes haru-art {
+    0% {
+        filter: blur(0.5vh);
+        transform: scale(1.1);
+    }
+
+    100% {
+        filter: blur(0vh);
+        transform: scale(1);
+    }
 }
 
 .haru-art {
@@ -1575,6 +1627,7 @@ body {
     height: 40vh;
     background-color: #222222;
     border-radius: 3vh;
+    overflow: hidden;
 }
 
 .haru-info-wrapper {
@@ -1604,6 +1657,17 @@ body {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    animation: move-info-left 1s ease;
+}
+
+@keyframes move-info-left {
+    0% {
+        transform: translateX(-130%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .info-left span {
@@ -1622,6 +1686,17 @@ body {
     flex-wrap: wrap;
     width: 100%;
     height: auto;
+    animation: move-info-right 1s ease;
+}
+
+@keyframes move-info-right {
+    0% {
+        transform: translateX(90%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .info-right span {
@@ -1653,6 +1728,7 @@ body {
     background-color: #222222;
     border-radius: 3vh;
     margin: 2% 0;
+    overflow: hidden;
 }
 
 .haru-info-img-wrapper {
@@ -1673,7 +1749,17 @@ body {
     flex-wrap: nowrap;
     width: 100%;
     height: auto;
-    
+    animation: info-img 1s ease;
+}
+
+@keyframes info-img {
+    0% {
+        transform: translateY(130%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .info-img img {
@@ -1750,6 +1836,7 @@ body {
     position: absolute;
     top: 14%;
     left: -0%;
+    animation: move-haru-text-bg 2s ease;
 }
 
 .haru-text-bg span {
@@ -1758,12 +1845,34 @@ body {
     font-size: 14vh;
     color: #d8fa00;
     opacity: 1;
+    
+}
+
+@keyframes move-haru-text-bg {
+    0% {
+        transform: translateX(-130%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .haru-faction-text-bg {
     position: absolute;
     top: 29%;
     left: 0%;
+    animation: haru-faction-text-bg 3s ease;
+}
+
+@keyframes haru-faction-text-bg {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .haru-faction-text-bg span {
@@ -2295,6 +2404,19 @@ body {
     justify-content: center;
     align-items: center;
     width: 105%;
+    animation: w-engine-in 1.5s ease;
+}
+
+@keyframes w-engine-in {
+    0% {
+        filter: blur(.6vh);
+        transform: scale(1.2);
+    }
+
+    100% {
+        filter: blur(0);
+        transform: scale(1.0);
+    }
 }
 
 /* W-ENGENS */
@@ -2330,6 +2452,7 @@ body {
     border-radius: 5vh;
     margin: 2% 0;
     margin-top: 5%;
+    overflow: hidden;
 }
 
 .button-rank-panel-wrapper {
@@ -2339,7 +2462,7 @@ body {
     align-items: center;
     width: 100%;
     height: auto;
-    margin: 1% 0%;
+    margin: 1% 0%; 
 }
 
 .button-rank {
@@ -2356,6 +2479,17 @@ body {
     border-color: #d8fa00;
     transition: .3s;
     overflow: hidden;
+    animation: button-rank-move-in 1s ease;
+}
+
+@keyframes button-rank-move-in {
+    0% {
+        transform: translateY(150%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
 }
 
 .button-rank::before {
@@ -2560,6 +2694,17 @@ body {
     display: flex;
     width: 100%;
     height: auto;
+    animation: move-event-img 1s ease;
+}
+
+@keyframes move-event-img {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .event-text-block {
@@ -2570,6 +2715,17 @@ body {
     width: 60%;
     height: auto;
     margin-left: 2%;
+    animation: move-event-text 1s ease;
+}
+
+@keyframes move-event-text {
+    0% {
+        transform: translateX(70%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
 }
 
 .event-text-wrapper {
@@ -2589,7 +2745,7 @@ body {
     align-items: center;
     width: 100%;
     height: 10vh;
-    padding: 4% 3%;
+    padding: 4% 6%;
     background-color: #d8fa00;
     border-top-right-radius: 2vh;
     border-top-left-radius: 2vh;
@@ -2598,7 +2754,7 @@ body {
 .event-text-main span {
     width: 100%;
     font-family: 'din-next-bold';
-    font-size: 5vh;
+    font-size: 4.5vh;
     text-align: center;
     line-height: 4vh;
 } 
